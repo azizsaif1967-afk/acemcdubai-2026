@@ -494,11 +494,12 @@ nav a:hover{color:#fff;border-bottom-color:var(--gold-light)}
 .leader-mono-label{font-family:'JetBrains Mono',monospace;font-size:6pt;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-light);margin-top:2mm}
 
 /* ===== Download / Share gate — inline CTA ===== */
-.dl-gate-row{max-width:780px;margin:-10px auto 0;padding:0 28px 0;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.dl-gate{display:inline-flex;align-items:center;gap:12px;background:var(--gold);color:#fff;padding:14px 22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;border:1px solid var(--gold-deep);cursor:pointer;transition:all .25s ease;text-decoration:none}
-.dl-gate:hover{background:var(--gold-deep)}
-.dl-gate svg{width:16px;height:16px;fill:currentColor}
-.dl-gate-note{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep)}
+.dl-gate-row{max-width:780px;margin:22px auto 0;padding:0 28px;display:flex;justify-content:flex-end;align-items:center}
+.dl-gate{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--gold-deep);padding:8px 14px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;border:1px solid var(--rule);cursor:pointer;transition:all .25s ease;text-decoration:none;line-height:1}
+.dl-gate:hover{background:var(--gold);color:#fff;border-color:var(--gold-deep)}
+.dl-gate svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:2}
+.dl-gate-note{display:none}
+@media (max-width:600px){.dl-gate-row{justify-content:stretch}.dl-gate{width:100%;justify-content:center}}
 
 /* ===== Download-gate modal ===== */
 #dl-gate-modal{position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;padding:20px}
